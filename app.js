@@ -34,6 +34,12 @@ app.get('/', (req, res) => {
   res.send("Welcome to Farouk's Express Server Application!");
 });
 
+app.set('view engine', 'ejs');
+app.get('/', function(req, res){
+  res.render('tasks.ejs');  // Express will look for 'home.ejs' in your views folder by default.
+});
+
+
 // Add this route handler at the end of your code
 // app.get('/', (req, res) => {
 //   res.redirect('/users');
