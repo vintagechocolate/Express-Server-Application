@@ -30,6 +30,8 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
+app.set('view engine', 'ejs');
+
 
 // Add this route handler at the end of your code
 app.get('/', (req, res) => {
