@@ -27,3 +27,7 @@ app.use('/categories', categoriesRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+app.get('/', (req, res) => {
+  res.send("Welcome to the Farouk's Express Server Application!");
+});
