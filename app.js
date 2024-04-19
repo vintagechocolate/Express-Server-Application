@@ -29,3 +29,17 @@ app.use('/categories', categoriesRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+
+
+// // Add this route handler at the end of your code
+// app.get('/', (req, res) => {
+//   res.send('Welcome to the API!');
+// });
+
+
+// Add this route handler at the end of your code
+app.get('/', (req, res) => {
+  res.redirect('/users');
+});
