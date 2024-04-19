@@ -10,8 +10,6 @@ function authenticationMiddleware(req, res, next) {
         res.set('WWW-Authenticate', 'Basic realm="example"');
         return res.status(401).send();
     }
-  
-     // Here you would normally validate the username and password against your database:
      
     if (user.name === 'admin' && user.pass === 'secret') { 
          // If credentials are valid, continue to next middleware
