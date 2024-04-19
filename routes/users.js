@@ -18,13 +18,10 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   const id = parseInt(req.params.id, 10);
   const user = users.find(user => user.id === id);
-  
   if (!user) {
     return res.status(404).json({message: 'User not found'});
   }
-
   res.json(user);
 });
-
 
 module.exports = router;
