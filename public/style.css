@@ -1,0 +1,29 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .task {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task h2 {
+    margin-top: 0;
+  }
+  
+  .task p {
+    margin-bottom: 5px;
+  }
+  
+  .task span {
+    font-weight: bold;
+  }
+  
