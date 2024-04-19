@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "basic-auth": "^2.0.1",
     "express": "^4.19.2"
   },
-  "devDependencies": {},
   "keywords": [],
   "description": ""
 }
