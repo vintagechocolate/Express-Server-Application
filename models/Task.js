@@ -8,5 +8,5 @@ class Task {
       this.status = status;
     }
   }
-  
+    
 module.exports = Task;

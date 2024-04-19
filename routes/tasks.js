@@ -9,7 +9,6 @@ let tasks = [
   new Task(3, 'Task 3', 'Description for Task 3', 'Category 3', 'pending')
 ];
 
-
 // Get all tasks
 router.get('/', (req, res) => {
   res.json(tasks);
