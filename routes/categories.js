@@ -1,16 +1,24 @@
 const express = require('express');
 const router = express.Router();
-const Category = require('../models/Category');
-
-// Dummy categories data
 let categories = [
-  new Category(1, 'Category 1'),
-  new Category(2, 'Category 2')
+  {id: 1, name: 'Category 1'},
+  {id: 2, name: 'Category 2'}
 ];
 
-// Get all categories
-router.get('/', (req, res) => {
-  res.json(categories);
+// Get all categories or a single category by id
+router.get('/:id?', (req, res) => {
+  if(req.params.id) {
+    const id = parseInt(req.params.id, 10);
+    const category = categories.find(category => category.id === id);
+
+    if (!category) {
+      return res.status(404).json({message: 'Category not found'});
+     }
+
+    return res.json(category);
+  } else {
+    return res.json(categories);
+  }
 });
 
 module.exports = router;

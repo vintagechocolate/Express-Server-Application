@@ -31,15 +31,12 @@ app.listen(PORT, () => {
 });
 
 
-
+// Add this route handler at the end of your code
+app.get('/', (req, res) => {
+  res.send("Welcome to Express Server Application!");
+});
 
 // // Add this route handler at the end of your code
 // app.get('/', (req, res) => {
-//   res.send('Welcome to the API!');
+//   res.redirect('/users');
 // });
-
-
-// Add this route handler at the end of your code
-app.get('/', (req, res) => {
-  res.redirect('/users');
-});
