@@ -29,19 +29,3 @@ app.use('/categories', categoriesRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-app.get('/', (req, res) => {
-  res.send("Welcome to Farouk's Express Server Application!");
-});
-
-app.set('view engine', 'ejs');
-app.get('/', function(req, res){
-  res.render('tasks.ejs');
-});
-
-
-// Add this route handler at the end of your code
-// app.get('/', (req, res) => {
-//   res.redirect('/users');
-// });
-
