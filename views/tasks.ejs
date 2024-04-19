@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  
   <div class="container">
     <h1>Tasks</h1>
     <% tasks.forEach(task => { %>
-      <div class="task">
+      <div class="tasks">
         <h2><%= task.title %></h2>
         <p><%= task.description %></p>
         <p><span>Category:</span> <%= task.category %></p>
         <p><span>Status:</span> <%= task.status %></p>
       </div>
-    <% }); %>
+       <% }); %>
   </div>
 </body>
 </html>

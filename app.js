@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 
 app.set('view engine', 'ejs');
 app.get('/', function(req, res){
-  res.render('tasks.ejs');  // Express will look for 'home.ejs' in your views folder by default.
+  res.render('tasks.ejs');
 });
 
 
