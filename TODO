@@ -1,5 +1,5 @@
 
-// - Error handling middlware [done]
-// - Client manipulation [Patch & Delete] in at least one data 
+// - Error handling middlware [Done]
+// - Client manipulation [Patch & Delete] in at least one data [Done]
 // - Utilize route parameters(:id, etc) [Done]
-// - Set engine [done]
+// - Set engine [Done]

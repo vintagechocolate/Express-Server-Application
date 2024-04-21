@@ -13,7 +13,7 @@ let tasks = [
 router.get('/', (req, res) => {
   res.json(tasks);
 });
-
+ 
 // Create a new task
 router.post('/', (req, res) => {
   const { title, description, category, status } = req.body;

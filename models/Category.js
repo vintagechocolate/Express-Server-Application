@@ -6,4 +6,4 @@ class Category {
     }
   }
     
-module.exports = Category;
+module.exports = Category; 

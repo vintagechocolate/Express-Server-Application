@@ -3,4 +3,4 @@ function loggingMiddleware(req, res, next) {
     next();
   }
   
-module.exports =  loggingMiddleware;
+module.exports =  loggingMiddleware; 

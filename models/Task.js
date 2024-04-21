@@ -7,6 +7,6 @@ class Task {
       this.category = category;
       this.status = status;
     }
-  }
+  } 
     
 module.exports = Task;

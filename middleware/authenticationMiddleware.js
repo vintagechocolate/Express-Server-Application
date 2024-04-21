@@ -21,4 +21,4 @@ function authenticationMiddleware(req, res, next) {
     }
 }
   
-module.exports = authenticationMiddleware;
+module.exports = authenticationMiddleware; 
